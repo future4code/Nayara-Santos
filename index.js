@@ -1,83 +1,54 @@
-//isso é um comentário
+// Exercício 1°
+// A)O que vai ser impresso no console?
+//R: Será impresso duas pessoas do elenco e um canal com o horario da transmissao.
 
-/*
-Isso é um bloco
-de notas
+// Exercício 2°
+//A)O que vai ser impresso no console?
+//R: Vai ser impresso o nome do cachorro, do gato e da tartaruga.Com a idade e a raça.
+//B)O que faz a sintaxe dos tres pontos antes do nome de um objeto?
+//R: Eles fazem com que os nomes vão de acordo com os animais.
 
-*/
+//Exercício 3°
+//A)O que vai ser impresso no console?
+//R: Sera impresso "falso" e undefined, pois nao colocou altura.
+//B)Explique o valor impresso no console. Voce sabe por que isso aconteceu?
+//R: Nao foi impresso nenhum valor, deu undefined porque o nao deram valor para altura.
 
-//1°Exercício 
-//a) O que vai ser impresso no console?
-//R:Vai ser impresso os números 10 e 50, pois 5*2=10 e 5*10=50. 
-//b) O que aconteceria se retirasse os dois console.log e simplesmente invocasse a função minhaFuncao(2)
-//e minhaFuncao(10)?O que apareceria no console?
-//R: Iria dar erro ou apareceria undefined.
+//Exercício 1°- Escrita de código
 
+//const pessoa = {
+  //nome: "Nayara",
+  //apelidos: ["Nay", "Nah", "Nana"] 
+//}
 
-//2° Exercício 
-//a) Explique o que essa função faz e qual é sua utilidade.
-//R: Ela é utilizada para executar textos dando os comandos true e false.
-//b) Determine qual será a saída no console para cada uma das 3 entradas do usuário:
-//i. Eu gosto de cenoura
-//ii. CENOURA é bom pra vista
-//iii. Cenouras crescem na terra
-//R: i.R: True, true e false.
+//console.log(`Eu sou ${pessoa.nome}, mas pode me chamar de: ${pessoa.apelidos}.`)
 
-//1° Exercício de escrita de código
+//Exercicío 2°
 
- function imprimirfrase(frase) {
- console.log(frase.length)
-console.log(frase.toUppeCase)
-}
-imprimirfrase("Eu sou Nayara, tenho 18 anos, moro em São Paulo, sou estudante")
+//const pessoa = {
+  //  nome: "Marcela",
+    //idade: 38,
+    //profissao: "Promotora"
+//}
+ 
+//function minhaFuncao(pessoa) {
+  //  const resultado = ["Marcela", 7, 38, "promotora", 9]
+    //return resultado
+//}
 
+//console.log(minhaFuncao(pessoa))
 
-//2°Exercício
+//Exercício 3°
 
-function somarArea(numero1, numero2) {
-    const area = numero1 + numero2
-console.log(area)
-}
+//const arrayCarrinho = ["uva", "manga", "morango"] 
+//nome: ("uva")
+//nome: ("manga")
+//nome: ("morango")
 
-
-function imprimirMensagemMaiuscula(mensagem) {
-    console.log("Tamanho da mensagem", mensagem.length)
-    console.log(mensagem.toUpperCase())
-}
-imprimirMensagemMaiuscula("")
-
-
-//3°Exercício
-
-const numero1 = Number(prompt("informe o primeiro número:"))
-const numero2 = Number(prompt("informe o segundo numero"))
-function somar (numero1, numero2) {
-const soma = numero1 + numero2
-    return soma
-}
-
-function subtracao (numero1, numero2) {
-const diferenca = numero1 - numero2
-    return diferenca 
-}
-
-function multiplicacao (numero1, numero2) {
-const multiplicar = numero1 * numero2
- return multiplicar
-}
-
-function dividir (numero1, numero2) {
-const divisao = numero1 / numero2
-  return divisao 
-}
-
-console.log("Os numeros inseridos são", numero1, "e", numero2)
-console.log("Soma:", somar)
-console.log("Diferenca:", subtracao)
-console.log("Multiplicacao:", multiplicacao) 
-console.log("Divisao:", dividir)
+//console.log(arrayCarrinho) 
 
 
+  
 
 
 
