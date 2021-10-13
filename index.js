@@ -1,103 +1,101 @@
-//isso é um comentário
-
-/*
-Isso é um bloco
-de notas
-
-*/
-
-//1°Exercício 
-//a) O que vai ser impresso no console?
-//R:Vai ser impresso os números 10 e 50, pois 5*2=10 e 5*10=50. 
-//b) O que aconteceria se retirasse os dois console.log e simplesmente invocasse a função minhaFuncao(2)
-//e minhaFuncao(10)?O que apareceria no console?
-//R: Iria dar erro ou apareceria undefined.
+//Exercício 1°
+//A)Explique o que o código faz.Qual o teste que ele realiza?
+//R:O código executa resultados do resto da divisão. E ele só executa resultados que forem números pares.
+//B)Para que tipos de números ele imprime no console "Passou no teste"?
+//R: Para números pares.
+//C)Para que tipos de números a mensagem é "Não passou no teste"?
+//R: Para números impares.
 
 
-//2° Exercício 
-//a) Explique o que essa função faz e qual é sua utilidade.
-//R: Ela é utilizada para executar textos dando os comandos true e false.
-//b) Determine qual será a saída no console para cada uma das 3 entradas do usuário:
-//i. Eu gosto de cenoura
-//ii. CENOURA é bom pra vista
-//iii. Cenouras crescem na terra
-//R: i.R: True, true e false.
 
-//1° Exercício de escrita de código
-
- function imprimirfrase(frase) {
- console.log(frase.length)
-console.log(frase.toUppeCase)
-}
-imprimirfrase("Eu sou Nayara, tenho 18 anos, moro em São Paulo, sou estudante")
+//Exercício 2°
+//A)Para que serve o código acima?
+//R: Para dá valor as frutas. 
+//B)Qual será a mensagem impressa no console, se o valor de fruta for "Maça"?
+//R: Irá ser impresso o preço da "Maça", 2.25.
+//C)Considere que um usuário queira comprar uma Pera, qual seria a mensagem impressa no console se retirássemos o break 
+//que está logo acima do default (o break indicado pelo comentário "BREAK PARA O ITEM c.")?
+//R: Irá ficar o valor da fruta que está abaixo que é 5.
 
 
-//2°Exercício
-
-function somarArea(numero1, numero2) {
-    const area = numero1 + numero2
-console.log(area)
-}
-
-
-function imprimirMensagemMaiuscula(mensagem) {
-    console.log("Tamanho da mensagem", mensagem.length)
-    console.log(mensagem.toUpperCase())
-}
-imprimirMensagemMaiuscula("")
+//Exercício 3°
+//A)O que a primeira linha está fazendo?
+//R: Está pedindo ao usuário digitar um numero.
+//B)Considere um usuário digitou o número 10. Qual será a mensagem do terminal? E se fosse o número -10?
+//R: A mensagem será que "Passou no teste". O -10 será que "Não passou".
+//C)Haverá algum erro no console? Justifique usando os conceitos de bloco ou escopo.
+//R: Sim, pois será um valor negativo e o numero que está dentro da chave também é negativo.
 
 
-//3°Exercício
+//Exercício 1° - Escrita de código
 
-const numero1 = Number(prompt("informe o primeiro número:"))
-const numero2 = Number(prompt("informe o segundo numero"))
-function somar (numero1, numero2) {
-const soma = numero1 + numero2
-    return soma
+const podeDirigir =(concluiuEnsinoMedio, temMaisDe18)=>{
+    
+  if(concluiuEnsinoMedio && temMaisDe18){
+  console.log("Voce ira poder dirigir.")
+  }else{
+  console.log("Infelizmente, voce nao ira poder dirigir.")
+  }
 }
 
-function subtracao (numero1, numero2) {
-const diferenca = numero1 - numero2
-    return diferenca 
+const concluiuEnsinoMedio = prompt("Voce terminou o ensino médio? Sim/Não").toLowerCase()=== "sim"
+const temMaisDe18 = prompt("Voce tem  mais de 18 anos? Sim/Não").toLowerCase()=== "sim"
+
+podeDirigir(concluiuEnsinoMedio, temMaisDe18)
+
+
+//Exercício 2°
+
+
+const periodoEscolar = (qualPeriodoEstuda)=>{
+  if(qualPeriodoEstuda){
+        
+    console.log("Bom Dia!")
+    
+   }else{
+    console.log("Voce estuda no periodo M")
+   }
 }
 
-function multiplicacao (numero1, numero2) {
-const multiplicar = numero1 * numero2
- return multiplicar
+const qualPeriodoEstuda = prompt("Voce estuda de manha? Sim/Nao.").toLowerCase()=== "sim"
+
+periodoEscolar(qualPeriodoEstuda)
+
+
+//Exercício 3°
+
+
+let periodoEscolar
+switch (periodoEscolar) {
+    case 'Matutino M':
+        console.log('Bom dia!')
+        break;
+    case 'Vespertino V':
+        console.log('Boa tarde!')
+        break;
+    case 'Noturno N':
+       console.log('Boa noite!')       
+        break;
+    default:
+       console.log()
+}   
+
+
+//exercício 4°
+
+
+const filmesGenerosValorIngresso = (qualGeneroDoFilme, qualValorDoFilme)=> {
+    if (qualGeneroDoFilme && qualValorDoFilme){
+        console.log("Genero fantasia")
+    }else{
+        console.log("Escolha outro filme")    
+    }
 }
+  
+const qualGeneroDoFilme = prompt("Voce vai assistir filme do genero fantasia? Sim/Nao").toLowerCase()=== "sim"
+const qualValorDoFilme = prompt("Qual é o valor do ingresso? 10,00").toLowerCase()=== "10,00"
 
-function dividir (numero1, numero2) {
-const divisao = numero1 / numero2
-  return divisao 
-}
-
-console.log("Os numeros inseridos são", numero1, "e", numero2)
-console.log("Soma:", somar)
-console.log("Diferenca:", subtracao)
-console.log("Multiplicacao:", multiplicacao) 
-console.log("Divisao:", dividir)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+filmesGenerosValorIngresso(qualGeneroDoFilme, qualValorDoFilme)
 
 
 
