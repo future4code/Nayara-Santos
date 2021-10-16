@@ -1,106 +1,78 @@
 //Exercício 1°
-//A)Explique o que o código faz.Qual o teste que ele realiza?
-//R:O código executa resultados do resto da divisão. E ele só executa resultados que forem números pares.
-//B)Para que tipos de números ele imprime no console "Passou no teste"?
-//R: Para números pares.
-//C)Para que tipos de números a mensagem é "Não passou no teste"?
-//R: Para números impares.
-
+//R: Está somando os codigos. Será impresso no console o valor 10.
 
 
 //Exercício 2°
-//A)Para que serve o código acima?
-//R: Para dá valor as frutas. 
-//B)Qual será a mensagem impressa no console, se o valor de fruta for "Maça"?
-//R: Irá ser impresso o preço da "Maça", 2.25.
-//C)Considere que um usuário queira comprar uma Pera, qual seria a mensagem impressa no console se retirássemos o break 
-//que está logo acima do default (o break indicado pelo comentário "BREAK PARA O ITEM c.")?
-//R: Irá ficar o valor da fruta que está abaixo que é 5.
+//A)R: Será impresso os numeros depois do 18 (19, 21, 23, 25, 27, 30).
+//B)R: 
 
 
 //Exercício 3°
-//A)O que a primeira linha está fazendo?
-//R: Está pedindo ao usuário digitar um numero.
-//B)Considere um usuário digitou o número 10. Qual será a mensagem do terminal? E se fosse o número -10?
-//R: A mensagem será que "Passou no teste". O -10 será que "Não passou".
-//C)Haverá algum erro no console? Justifique usando os conceitos de bloco ou escopo.
-//R: Sim, pois será um valor negativo e o numero que está dentro da chave também é negativo.
+//R: A primeira linha seria com um asterisco, a segunda com dois asteriscos, a terceira com tres asteriscos 
+//e a quarta com quatro asteriscos.
 
 
 //Exercício 1° - Escrita de código
 
-const podeDirigir =(concluiuEnsinoMedio, temMaisDe18)=>{
-    
-  if(concluiuEnsinoMedio && temMaisDe18){
-  console.log("Voce ira poder dirigir.")
-  }else{
-  console.log("Infelizmente, voce nao ira poder dirigir.")
-  }
-}
-
-const concluiuEnsinoMedio = prompt("Voce terminou o ensino médio? Sim/Não").toLowerCase()=== "sim"
-const temMaisDe18 = prompt("Voce tem  mais de 18 anos? Sim/Não").toLowerCase()=== "sim"
-
-podeDirigir(concluiuEnsinoMedio, temMaisDe18)
-
+//const bichosDeEstimacao = prompt("Quantos bichos de estimação voce tem?")
 
 //Exercício 2°
 
+//const arrayOriginal = [10, 15, 20, 25, 30, 35, 40]
+//for(let numero of arrayOriginal) {
+//    console.log(numero / 10)
 
-const periodoEscolar = (qualPeriodoEstuda)=>{
-  if(qualPeriodoEstuda){
-        
-    console.log("Bom Dia!")
-    
-   }else{
-    console.log("Voce estuda no periodo M")
-   }
-}
+//}
 
-const qualPeriodoEstuda = prompt("Voce estuda de manha? Sim/Nao.").toLowerCase()=== "sim"
+//const arrayOriginal = [10, 15, 20, 25, 30, 35, 40] 
 
-periodoEscolar(qualPeriodoEstuda)
+//const resultado = []
+//for(let numero of arrayOriginal){
 
+//if(numero % 2=== 0){
+  //  resultado.push(numero)
+  //}
+//}
 
-//Exercício 3°
+//console.log(resultado)
 
+//const arrayOriginal = [10, 15, 20, 25, 30, 35, 40]
 
-let periodoEscolar
-switch (periodoEscolar) {
-    case 'Matutino M':
-        console.log('Bom dia!')
-        break;
-    case 'Vespertino V':
-        console.log('Boa tarde!')
-        break;
-    case 'Noturno N':
-       console.log('Boa noite!')       
-        break;
-    default:
-       console.log()
-}   
+//const resultado = []
 
+//for(let i = 0; i < arrayOriginal.length; i++) {
 
-//exercício 4°
+  //  resultado.push(`O numero do indice ${i} é ${arrayOriginal[i]}`)
+//}
 
+//console.log(resultado)
 
-const filmesGenerosValorIngresso = (qualGeneroDoFilme, qualValorDoFilme)=> {
-    if (qualGeneroDoFilme && qualValorDoFilme){
-        console.log("Genero fantasia")
-    }else{
-        console.log("Escolha outro filme")    
-    }
-}
-  
-const qualGeneroDoFilme = prompt("Voce vai assistir filme do genero fantasia? Sim/Nao").toLowerCase()=== "sim"
-const qualValorDoFilme = prompt("Qual é o valor do ingresso? 10,00").toLowerCase()=== "10,00"
+//function valorMaximo (array){
+  //  let maior = array[0]
 
-filmesGenerosValorIngresso(qualGeneroDoFilme, qualValorDoFilme)
+    //for(let i = 1; i < array.length; i++){
+      //  if(array[i] > maior){
+        //    maior = array [i]
+        //}
+    //}
+    //return maior 
+//}
 
+//const numero = [10, 15, 20, 25, 30, 35, 40]
+//const maiorNumero = valorMaximo(numero)
+//console.log(maiorNumero)
 
+//function valorMinimo (array){
+  //  let menor = array[0]
 
+    //for(let i = 1; i < array.length; i++){
+      //  if(array[i] > menor){
+        //    menor = array [i]
+        //}
+    //}
+    //return menor
+//}
 
-
-
-
-
+//const numero = [10, 15, 20, 25, 30, 35, 40]
+//const menorNumero = valorMinimo(numero)
+//console.log(menorNumero)
