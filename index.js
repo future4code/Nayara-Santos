@@ -1,78 +1,186 @@
-//Exercício 1°
-//R: Está somando os codigos. Será impresso no console o valor 10.
+
+// COMPARADORES
+// Exercício 1------------------------------------------------------------------------------------
+
+// a-)Comparador de desigualdade a!==b 
+// Exemplo:
+
+function checarDesigualdade(a, b) {
+
+    return `No comparador de desigualdade ${a}!==${b} é ${a !== b}`
+}
+console.log(checarDesigualdade(1, 3));
+
+// b-)Compare a igualdade entre a===b
+
+function checarIgualdade(a, b) {
+    //  Sua lógica aqui
+  return `No comparador de igualdade ${a} === ${b} é ${a === b}`
+}
+console.log(checarIgualdade(1, 3));
+
+// c-)Faça uma função chamada "verificaSeEMaior"
+function verificaSeEMaior(a, b){
+    return `No comparador de maior ${a} > ${b} é ${a > b}`
+}
+console.log(verificaSeEMaior(321, 2156));
 
 
-//Exercício 2°
-//A)R: Será impresso os numeros depois do 18 (19, 21, 23, 25, 27, 30).
-//B)R: 
+// Exercício 2------------------------------------------------------------------------------------
+//Escreva true or false para as comparações abaixo:
+// exemplo 1>2 = false
+ //a-) 1==='1'= false
+ //b-) 1=='1'= false
+ //c-) 'a'==='b'= true
+ //d-) 'b'>'a'= true
+ //e-) 0!==null= false
 
 
-//Exercício 3°
-//R: A primeira linha seria com um asterisco, a segunda com dois asteriscos, a terceira com tres asteriscos 
-//e a quarta com quatro asteriscos.
+// CONDICIONAIS
 
+// Exercício 3------------------------------------------------------------------------------------
 
-//Exercício 1° - Escrita de código
+//const cadastro =(nomeDoUsuario, anoDeNascimento, senhaDoUsuario, nacionalidade) => {
+    //const usuario = [
+        //{nomeDoUsuario = "Samantha"},
+        //{anoDeNascimento = "2001"},
+        //{senhaDoUsuario = "123456"},
+        //{nacionalidade = "brasileira"}
+    //]
+    
+    //  Sua lógica aqui
+//}
+//console.log(cadastro(nomeDoUsuario, anoDeNascimento, senhaDoUsuario, nacionalidade));
 
-//const bichosDeEstimacao = prompt("Quantos bichos de estimação voce tem?")
+// Exercício 4-----------------------------------------------------------------------------------------------
 
-//Exercício 2°
-
-//const arrayOriginal = [10, 15, 20, 25, 30, 35, 40]
-//for(let numero of arrayOriginal) {
-//    console.log(numero / 10)
+//const login = () => {
+    //const login = "labenu"
+    //const senha = prompt("Qual é sua senha?") === "senha valida"
+    
+    //  Sua lógica aqui
 
 //}
 
-//const arrayOriginal = [10, 15, 20, 25, 30, 35, 40] 
+//console.log(login());
 
-//const resultado = []
-//for(let numero of arrayOriginal){
+// Exercício 5----------------------------------------------------------------------------------------------------
 
-//if(numero % 2=== 0){
-  //  resultado.push(numero)
-  //}
+//const primeiraDose = () => {
+  //const pessoa = (nome, vacina)
+    //const nome = "Aurora"
+    //const vacina = "Coronavac"
+    
+  //let dataTempo = (data, tempo) 
+    //let data = "10/07/2021"
+    //let tempo = "28 dias"
+
+    
+ //`Olá ${nome}! A proxima dose da ${vacina} é daqui a ${tempo} dias. Compareça no posto na ${data}.`
+    
+      
+    //  Sua lógica aqui
 //}
+//console.log(primeiraDose())
 
-//console.log(resultado)
 
-//const arrayOriginal = [10, 15, 20, 25, 30, 35, 40]
+// LOOP+CONDICIONAL
 
-//const resultado = []
+// Exercício 6 -------------------------------------------------------------------------------------
 
-//for(let i = 0; i < arrayOriginal.length; i++) {
+const segundaDose = (nomeDoUsuario) => {
+    const usuarios = [
+        { nome: "Artur", imunizacao: "incompleta" },
+        { nome: "Barbara", imunizacao: "incompleta" },
+        { nome: "Carlos", imunizacao: "incompleta" }
+    ]
+ 
+    //  Sua lógica aqui
+    const vacinaçaoCorona = usuarios.filter((pessoa)=>{
+    if(pessoa.nome === nomeDoUsuario){
+        pessoa.imunizacao = "completa"
 
-  //  resultado.push(`O numero do indice ${i} é ${arrayOriginal[i]}`)
-//}
+        return pessoa
+    }
+    })
+    console.log(vacinaçaoCorona)     
+}
+const nomePessoa = "Barbara"
+segundaDose(nomePessoa)
 
-//console.log(resultado)
+// Exercício 7 --------------------------------------------------------------------------------------
 
-//function valorMaximo (array){
-  //  let maior = array[0]
+const avisoAosAtrasados = () => {
+    const usuarios = [
+        { nome: "Artur", imunizacao: "incompleta" },
+        { nome: "Barbara", imunizacao: "completa" },
+        { nome: "Carlos", imunizacao: "incompleta" }
+    ]
 
-    //for(let i = 1; i < array.length; i++){
-      //  if(array[i] > maior){
-        //    maior = array [i]
-        //}
-    //}
-    //return maior 
-//}
+    //  Sua lógica aqui
+    const vacinaçao = usuarios.filter((pessoa)=>{
+        if(pessoa.imunizacao === "incompleta"){
+            return true
+        }
+    })
+   
+    const enviarMensagem = vacinaçao.map((pessoa)=>{
+        console.log(`Olá ${pessoa.nome}! Sua imunização está ${pessoa.imunizacao}, por favor volte ao postinho para tomar a segunda dose.`)
+    })
+}
+console.log(avisoAosAtrasados());
 
-//const numero = [10, 15, 20, 25, 30, 35, 40]
-//const maiorNumero = valorMaximo(numero)
-//console.log(maiorNumero)
 
-//function valorMinimo (array){
-  //  let menor = array[0]
+// DESAFIO------------------------------------------------------------------------------------------
 
-    //for(let i = 1; i < array.length; i++){
-      //  if(array[i] > menor){
-        //    menor = array [i]
-        //}
-    //}
-    //return menor
-//}
+const usuarios = [
+    {
+        nome: "Artur",
+        ano: 2000,
+        nacionalidae: "brasileiro",
+        senha: "123456",
+        vacina: "pfizer",
+        imunizacao: "incompleta"
+    },
+    {
+        nome: "Bárbara",
+        ano: 1984,
+        nacionalidae: "brasileira",
+        senha: "labenu",
+        vacina: "astrazenica",
+        imunizacao: "completa"
+    },
+    {
+        nome: "Carlos",
+        ano: 2000,
+        nacionalidae: "brasileiro",
+        senha: "123456",
+        vacina: "coronavac",
+        imunizacao: "incompleta"
+    }
 
-//const numero = [10, 15, 20, 25, 30, 35, 40]
-//const menorNumero = valorMinimo(numero)
-//console.log(menorNumero)
+]
+
+const cadastroDesafio = () => {
+    //  Sua lógica aqui
+}
+console.log(cadastroDesafio());
+
+const loginDesafio = () => {
+    //  Sua lógica aqui
+}
+console.log(loginDesafio());
+
+const primeiraDoseDesafio = () => {
+//  Sua lógica aqui
+}
+console.log(primeiraDoseDesafio())
+const segundaDoseDesafio = (nomeDoUsuario) => {
+    //  Sua lógica aqui
+}
+console.log(segundaDoseDesafio("ALGUM NOME AQUI"));
+
+const avisoAosAtrasadosDesafio = () => {
+    //  Sua lógica aqui
+}
+console.log(avisoAosAtrasadosDesafio());
