@@ -1,78 +1,75 @@
 //Exercício 1°
-//R: Está somando os codigos. Será impresso no console o valor 10.
-
+//A)R: Será impresso as arrays dos nomes e os apelidos.
 
 //Exercício 2°
-//A)R: Será impresso os numeros depois do 18 (19, 21, 23, 25, 27, 30).
-//B)R: 
-
+//A)R: Será impresso só os  nomes.
 
 //Exercício 3°
-//R: A primeira linha seria com um asterisco, a segunda com dois asteriscos, a terceira com tres asteriscos 
-//e a quarta com quatro asteriscos.
-
+//A)R: Será impresso só os dois primeiros nomes e os apelidos.
 
 //Exercício 1° - Escrita de código
 
-//const bichosDeEstimacao = prompt("Quantos bichos de estimação voce tem?")
+//const pets = [
+  //  {nome: "Lupin", raca: "Salsicha"},
+     // {nome: "Polly", raca: "Lhasa Apso"},
+    //{nome: "Madame", raca: "Poodle"},
+    //{nome: "Quentinho", raca: "Salsicha"},
+    //{nome: "Fluffy", raca: "Poodle"}, 
+    //{nome: "Caramelo", raca: "Vira-lata"},
+//]
 
-//Exercício 2°
+//const novaArrayB = pets.map((item, index, array) => {
+  //  return item.nome
+//})
+//console.log(novaArrayB)
 
-//const arrayOriginal = [10, 15, 20, 25, 30, 35, 40]
-//for(let numero of arrayOriginal) {
-//    console.log(numero / 10)
+//const pets = [
+  // {nome: "Lupin", raca: "Salsicha"},
+  // {nome: "Polly", raca: "Lhasa Apso"},
+  // {nome: "Madame", raca: "Poodle"},
+   //{nome: "Quentinha", raca: "Salsicha"},
+   //{nome: "Fluffy", raca: "Poodle"},
+  // {nome: "Caramelo", raca: "Vira-lata"}
+//]
 
+//const petsDaracaSalsicha = (pets) => {
+    //if(pets.raca === "Salsicha") {
+     //   return true
+    //}else{
+    //   return false
+  //  } 
 //}
 
-//const arrayOriginal = [10, 15, 20, 25, 30, 35, 40] 
+//const petsSalsicha = pets.filter(petsDaracaSalsicha)
+//console.log(petsSalsicha)
 
-//const resultado = []
-//for(let numero of arrayOriginal){
+//Exercício 2° 
 
-//if(numero % 2=== 0){
-  //  resultado.push(numero)
+
+//const produtos = [
+    //{nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5},
+    //{nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8},
+    //{nome: "Veja Multiuso", categoria: "Limpeza", preco: 12.6},
+    //{nome: "Dúzia de Banana", categoria: "Hortifruti", preco: 5.7},
+    //{nome: "Leite", categoria: "Bebidas", preco: 2.99},
+    //{nome: "Candida", categoria: "Limpeza", preco: 3.30},
+    //{nome: "Detergente Ype", categoria: "Limpeza", preco: 2.2},
+    //{nome: "Vinho Tinto", categoria: "Bebidas", preco: 55},
+    //{nome: "Berinjela Kg", categoria: "Hortifruti", preco: 8.99},
+  //  {nome: "Sabão em Pó Ype", categoria: "Limpeza", preco: 10.80}
+//]
+
+//const novaArrayA = produtos.map((item, index, array) => {
+  //  return item.nome
+//})
+//console.log(novaArrayA)
+
+//const categoriaBebidaPreco = (categoria) => {
+  //if(categoria.Bebidas === "Bebidas"){
+    //return true
+  //}else{
+    //return false
   //}
 //}
-
-//console.log(resultado)
-
-//const arrayOriginal = [10, 15, 20, 25, 30, 35, 40]
-
-//const resultado = []
-
-//for(let i = 0; i < arrayOriginal.length; i++) {
-
-  //  resultado.push(`O numero do indice ${i} é ${arrayOriginal[i]}`)
-//}
-
-//console.log(resultado)
-
-//function valorMaximo (array){
-  //  let maior = array[0]
-
-    //for(let i = 1; i < array.length; i++){
-      //  if(array[i] > maior){
-        //    maior = array [i]
-        //}
-    //}
-    //return maior 
-//}
-
-//const numero = [10, 15, 20, 25, 30, 35, 40]
-//const maiorNumero = valorMaximo(numero)
-//console.log(maiorNumero)
-
-//function valorMinimo (array){
-  //  let menor = array[0]
-
-    //for(let i = 1; i < array.length; i++){
-      //  if(array[i] > menor){
-        //    menor = array [i]
-        //}
-    //}
-    //return menor
-//}
-
-//const numero = [10, 15, 20, 25, 30, 35, 40]
-//const menorNumero = valorMinimo(numero)
-//console.log(menorNumero)
+//const BebidasPreco = categoria.filter(categoriaBebidaPreco)
+//console.log(BebidasPreco)
