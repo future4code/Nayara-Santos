@@ -1,108 +1,75 @@
-//isso é um comentário
+//Exercício 1°
+//A)R: Será impresso as arrays dos nomes e os apelidos.
 
-/*
-Isso é um bloco
-de notas
+//Exercício 2°
+//A)R: Será impresso só os  nomes.
 
-*/
+//Exercício 3°
+//A)R: Será impresso só os dois primeiros nomes e os apelidos.
 
-//1°Exercício 
-//a) O que vai ser impresso no console?
-//R:Vai ser impresso os números 10 e 50, pois 5*2=10 e 5*10=50. 
-//b) O que aconteceria se retirasse os dois console.log e simplesmente invocasse a função minhaFuncao(2)
-//e minhaFuncao(10)?O que apareceria no console?
-//R: Iria dar erro ou apareceria undefined.
+//Exercício 1° - Escrita de código
 
+//const pets = [
+  //  {nome: "Lupin", raca: "Salsicha"},
+     // {nome: "Polly", raca: "Lhasa Apso"},
+    //{nome: "Madame", raca: "Poodle"},
+    //{nome: "Quentinho", raca: "Salsicha"},
+    //{nome: "Fluffy", raca: "Poodle"}, 
+    //{nome: "Caramelo", raca: "Vira-lata"},
+//]
 
-//2° Exercício 
-//a) Explique o que essa função faz e qual é sua utilidade.
-//R: Ela é utilizada para executar textos dando os comandos true e false.
-//b) Determine qual será a saída no console para cada uma das 3 entradas do usuário:
-//i. Eu gosto de cenoura
-//ii. CENOURA é bom pra vista
-//iii. Cenouras crescem na terra
-//R: i.R: True, true e false.
+//const novaArrayB = pets.map((item, index, array) => {
+  //  return item.nome
+//})
+//console.log(novaArrayB)
 
-//1° Exercício de escrita de código
+//const pets = [
+  // {nome: "Lupin", raca: "Salsicha"},
+  // {nome: "Polly", raca: "Lhasa Apso"},
+  // {nome: "Madame", raca: "Poodle"},
+   //{nome: "Quentinha", raca: "Salsicha"},
+   //{nome: "Fluffy", raca: "Poodle"},
+  // {nome: "Caramelo", raca: "Vira-lata"}
+//]
 
- function imprimirfrase(frase) {
- console.log(frase.length)
-console.log(frase.toUppeCase)
-}
-imprimirfrase("Eu sou Nayara, tenho 18 anos, moro em São Paulo, sou estudante")
+//const petsDaracaSalsicha = (pets) => {
+    //if(pets.raca === "Salsicha") {
+     //   return true
+    //}else{
+    //   return false
+  //  } 
+//}
 
+//const petsSalsicha = pets.filter(petsDaracaSalsicha)
+//console.log(petsSalsicha)
 
-//2°Exercício
-
-function somarArea(numero1, numero2) {
-    const area = numero1 + numero2
-console.log(area)
-}
-
-
-function imprimirMensagemMaiuscula(mensagem) {
-    console.log("Tamanho da mensagem", mensagem.length)
-    console.log(mensagem.toUpperCase())
-}
-imprimirMensagemMaiuscula("")
-
-
-//3°Exercício
-
-const numero1 = Number(prompt("informe o primeiro número:"))
-const numero2 = Number(prompt("informe o segundo numero"))
-function somar (numero1, numero2) {
-const soma = numero1 + numero2
-    return soma
-}
-
-function subtracao (numero1, numero2) {
-const diferenca = numero1 - numero2
-    return diferenca 
-}
-
-function multiplicacao (numero1, numero2) {
-const multiplicar = numero1 * numero2
- return multiplicar
-}
-
-function dividir (numero1, numero2) {
-const divisao = numero1 / numero2
-  return divisao 
-}
-
-console.log("Os numeros inseridos são", numero1, "e", numero2)
-console.log("Soma:", somar)
-console.log("Diferenca:", subtracao)
-console.log("Multiplicacao:", multiplicacao) 
-console.log("Divisao:", dividir)
+//Exercício 2° 
 
 
+//const produtos = [
+    //{nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5},
+    //{nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8},
+    //{nome: "Veja Multiuso", categoria: "Limpeza", preco: 12.6},
+    //{nome: "Dúzia de Banana", categoria: "Hortifruti", preco: 5.7},
+    //{nome: "Leite", categoria: "Bebidas", preco: 2.99},
+    //{nome: "Candida", categoria: "Limpeza", preco: 3.30},
+    //{nome: "Detergente Ype", categoria: "Limpeza", preco: 2.2},
+    //{nome: "Vinho Tinto", categoria: "Bebidas", preco: 55},
+    //{nome: "Berinjela Kg", categoria: "Hortifruti", preco: 8.99},
+  //  {nome: "Sabão em Pó Ype", categoria: "Limpeza", preco: 10.80}
+//]
 
+//const novaArrayA = produtos.map((item, index, array) => {
+  //  return item.nome
+//})
+//console.log(novaArrayA)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//const categoriaBebidaPreco = (categoria) => {
+  //if(categoria.Bebidas === "Bebidas"){
+    //return true
+  //}else{
+    //return false
+  //}
+//}
+//const BebidasPreco = categoria.filter(categoriaBebidaPreco)
+//console.log(BebidasPreco)
