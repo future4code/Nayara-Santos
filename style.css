@@ -1,0 +1,56 @@
+
+footer{
+    height: 70px;
+    background-color: chocolate;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:chocolate;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer{
+    bottom: 0;
+    text-align: center;
+    background-color: chocolate;
+    position: fixed;
+}
+
+footer{
+    width: 70px;
+}
+
+.titulo-e-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    gap: 10px;
+}
+
+video{
+    width: 70%;
+    justify-self: flex-start;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+    color: black
+}
+
