@@ -1,38 +1,21 @@
-import React from 'react';
-import styled from 'styled-components'
-import Post from './components/Post/Post';
+import React from "react";
+import Etapa1 from "./components/Etapa1"
+import './App.css';
 
-const MainContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-`
+export default class App extends React.Component {
 
-class App extends React.Component {
+  mostrarOpcaoDosSelect = (event) => {
+    console.log(event.tanget)
+  }
+
   render() {
-    return (
-      <MainContainer>
-        <Post
-          nomeUsuario={'paulinha'}
-          fotoUsuario={'https://picsum.photos/id/1/200/300'}
-          fotoPost={'https://picsum.photos/200/150'}
-        />
-
-        <Post
-        nomeUsuario={'João'}
-        fotoUsuario={'https://picsum.photos/200'}
-        fotoPost={'https://picsum.photos/200/300'}
-        />
-
-        <Post
-        nomeUsuario={'Julia'}
-        fotoUsuario={'https://picsum.photos/200/300'}
-        fotoPost={'https://picsum.photos/200'}
-        />
-      </MainContainer>
-    );
+    return <div>
+      <select onChange = {this.mostrarOpcaoDosSelect}>
+        <option value={"Ensino Médio Incompleto"}>Ensino Médio Incompleto</option>
+        <option value={"Ensino Médio Completo"}>Ensino Médio Completo</option>
+        <option value={"Ensino Superior Incompleto"}>Ensino Superior Incompleto</option>
+        <option value={"Ensino Superior Completo"}>Ensino Superior Completo</option>
+      </select>
+    </div>
   }
 }
-
-export default App;
