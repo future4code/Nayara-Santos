@@ -1,103 +1,75 @@
-//isso é um comentário
+//Exercício 1°
+//A)R: Será impresso as arrays dos nomes e os apelidos.
 
-/*
-Isso é um bloco
-de notas
+//Exercício 2°
+//A)R: Será impresso só os  nomes.
 
-1-a)R:false
-b)R:false
-c)R:true
-d)R:boolean
+//Exercício 3°
+//A)R: Será impresso só os dois primeiros nomes e os apelidos.
 
-2-R:18+24=42
+//Exercício 1° - Escrita de código
 
-3-R:Ele deve primeiro escolher dois números e imprimi-los e logo depois soma-los no console.
+//const pets = [
+  //  {nome: "Lupin", raca: "Salsicha"},
+     // {nome: "Polly", raca: "Lhasa Apso"},
+    //{nome: "Madame", raca: "Poodle"},
+    //{nome: "Quentinho", raca: "Salsicha"},
+    //{nome: "Fluffy", raca: "Poodle"}, 
+    //{nome: "Caramelo", raca: "Vira-lata"},
+//]
 
-1-a)R:18 anos
-b)R:19 anos
-c)R:true
-d)R:-1 ano de diferença
+//const novaArrayB = pets.map((item, index, array) => {
+  //  return item.nome
+//})
+//console.log(novaArrayB)
 
-2-a)R:Número 4
-b)R:0
-c)R:Numeros pares 4,6,8,10
-d)R:Numero impar 3
+//const pets = [
+  // {nome: "Lupin", raca: "Salsicha"},
+  // {nome: "Polly", raca: "Lhasa Apso"},
+  // {nome: "Madame", raca: "Poodle"},
+   //{nome: "Quentinha", raca: "Salsicha"},
+   //{nome: "Fluffy", raca: "Poodle"},
+  // {nome: "Caramelo", raca: "Vira-lata"}
+//]
 
-3-a)R:6570
-b)R:219
-c)R:5256
-*/
+//const petsDaracaSalsicha = (pets) => {
+    //if(pets.raca === "Salsicha") {
+     //   return true
+    //}else{
+    //   return false
+  //  } 
+//}
 
-console.log("template-javascript")
+//const petsSalsicha = pets.filter(petsDaracaSalsicha)
+//console.log(petsSalsicha)
 
-const bool1 = true
-const bool2 = false
-const bool3 = !bool2 
-
-let resultado = bool1 && bool2
-console.log("a.", resultado)
-
-resultado = bool1 && bool2 && bool3 
-console.log("b.", resultado)
-
-
-resultado = !resultado && (bool1 || bool2)
-console.log("c.", resultado)
-
-console.log("d.", typeof resultado)
-
-let primeiroNumero = prompt("Digite um numero!")
-let segundoNumero = prompt("Digite outro numero!")
-
-const soma = primeiroNumero + segundoNumero
-
-console.log(18+24)
-
-let idadeDousuario = prompt("Qual sua idade?")
-let idadedaMelhoramiga = prompt("Qual é a idade da sua melhor amiga?") 
-
-console.log("18 anos")
-console.log("19 anos")
-
-console.log("Sua idade é maior do que a idade da sua melhor amiga?")
-
-a=false
-b=true
-
-console.log("a.", resultado)
+//Exercício 2° 
 
 
-console.log(18-19)
- 
-console.log("number -1")
+//const produtos = [
+    //{nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5},
+    //{nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8},
+    //{nome: "Veja Multiuso", categoria: "Limpeza", preco: 12.6},
+    //{nome: "Dúzia de Banana", categoria: "Hortifruti", preco: 5.7},
+    //{nome: "Leite", categoria: "Bebidas", preco: 2.99},
+    //{nome: "Candida", categoria: "Limpeza", preco: 3.30},
+    //{nome: "Detergente Ype", categoria: "Limpeza", preco: 2.2},
+    //{nome: "Vinho Tinto", categoria: "Bebidas", preco: 55},
+    //{nome: "Berinjela Kg", categoria: "Hortifruti", preco: 8.99},
+  //  {nome: "Sabão em Pó Ype", categoria: "Limpeza", preco: 10.80}
+//]
 
-let numeroPar = prompt("insira um número par!")
- 
-const restoDaDivisao = 4 % 2 
-console.log(restoDaDivisao)//2
+//const novaArrayA = produtos.map((item, index, array) => {
+  //  return item.nome
+//})
+//console.log(novaArrayA)
 
-console.log("number 4")
-
-console.log("number 6")
-
-console.log("number 8")
-
-console.log("number 10")
-
-let numeroImpar = prompt("insira um numero impar!")
-console.log("numberImpar 3")
-
-const idade = 18
-const dias = ("18*365")
-console.log(18*365)
-const meses = (6570/30)
-console.log(6570/30)
-const horas = (219*24)
-console.log(219*24)
-
-
-
-
-
-
- 
+//const categoriaBebidaPreco = (categoria) => {
+  //if(categoria.Bebidas === "Bebidas"){
+    //return true
+  //}else{
+    //return false
+  //}
+//}
+//const BebidasPreco = categoria.filter(categoriaBebidaPreco)
+//console.log(BebidasPreco)
