@@ -1,19 +1,39 @@
-import styled from "styled-components"
-import './App.css';
+import React from "react";
+import paginaInicial from "./components/paginaInicial";
+import paginaPlaylists from "./components/paginaPlaylists";
 
-function App() {
-  return (
-    <div>
-      <div>
-        <button>Trocar de tela</button>
-      </div>
-      <div>
-        <input className= "Nome"/>
-        <input className= "Email"/>
-        <button>Criar Usuario</button>
-      </div>
-    </div>
-  );
+
+export default class App extends React.Component {
+  state= {
+   paginaAtual: "musicas"  
 }
 
-export default App;
+escolhaTela = () => {
+ switch (this.state.paginaAtual){
+   case "musicas":
+     return <paginaInicial irParaMusicas={this.irParaMusicas}/>
+   case "playlist":
+     return <paginaPlaylists irParaplaylist={this.irParaplaylist}/> 
+   default:
+     return <div>Erro! Página não encontrada :</div>
+  } 
+ }
+
+ irParaMusicas = () => {
+   this.setState({paginaAtual: "musicas"})
+ }
+
+ irParaplaylist = () => {
+  this.setState({paginaAtual: "playlist"})
+ }
+
+  
+  render(){
+    
+    return (
+      <div>
+       {this.escolhaTela()}
+      </div>
+    );
+  }
+}  
