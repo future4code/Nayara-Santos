@@ -30,7 +30,8 @@ export default class App extends React.Component {
   render(){
     return (
       <div>
-       {this.escolherMusica}
+       <h1>Labefy</h1>
+       {this.escolherMusica()}
       </div>
     )
   }
