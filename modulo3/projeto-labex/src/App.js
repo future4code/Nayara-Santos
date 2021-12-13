@@ -1,6 +1,6 @@
 import axios from "axios"
 import {useForm} from './hooks/useForm';
-import {useAdministrativo} from './hooks/useAdministrativo'
+
 
 
 export default function PaginaInscreverViagens() {
@@ -50,14 +50,11 @@ export default function PaginaInscreverViagens() {
       </form>
       <button onClick="voltar">Voltar</button>
       <button onClick="inscrever-se">Inscrever-se</button>
-      <h1>Login</h1>
-            <input value ={email} onChange={mudaEmail} placeholder={"E-mail"}/>
-            <input value ={senha} onChange={mudaSenha} placeholder={"Senha"}/>
-            <button onClick ={fazerLogin}>Fazer Login</button> 
+     
     </div> 
     )
    }
-  }
+  
  
 
 
