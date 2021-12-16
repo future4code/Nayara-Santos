@@ -6,11 +6,13 @@ import RecipesDetailPage from '../pages/RecipesDetailPage/RecipesDetailPage'
 import RecipesListPage from '../pages/RecipesListPage/RecipesListPage'
 import SingUpPage from '../pages/SingUpPage/SingUpPage'
 import ErrorPage from '../pages/ErrorPage/ErrorPage'
+import Header from '../components/Header/Header'
    
 const Router = () => {
     return (
 
        <BrowserRouter>
+          <Header/>
           <Switch>
             <Route exact path='/adicionar-receita'>
                 <AddRecipesPage/>
