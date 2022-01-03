@@ -1,18 +1,16 @@
 import React from 'react'
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 import LoginPage from '../pages/LoginPage/LoginPage'
 import AddRecipesPage from '../pages/AddRecipesPage/AddRecipesPage'
 import RecipesDetailPage from '../pages/RecipesDetailPage/RecipesDetailPage'
 import RecipesListPage from '../pages/RecipesListPage/RecipesListPage'
 import SingUpPage from '../pages/SingUpPage/SingUpPage'
 import ErrorPage from '../pages/ErrorPage/ErrorPage'
-import Header from '../components/Header/Header'
+
    
-const Router = () => {
+const Router = ({rightButtonText, setRightButtonText}) => {
     return (
 
-       <BrowserRouter>
-          <Header/>
           <Switch>
             <Route exact path='/adicionar-receita'>
                 <AddRecipesPage/>
@@ -27,13 +25,13 @@ const Router = () => {
                 <SingUpPage/>
             </Route>
             <Route exact path='/login'>
-                <LoginPage/>
+                <LoginPage rightButtonText={rightButtonText} setRightButtonText={setRightButtonText}/>
             </Route>
             <Route>
                 <ErrorPage/>
             </Route>
           </Switch>
-       </BrowserRouter>
+    
     )
 }
 
