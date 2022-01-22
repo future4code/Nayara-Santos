@@ -1,0 +1,21 @@
+div{
+    padding: 1px;
+    justify-content: center;
+    margin: 1px;
+    border: 2px;
+    background: rebeccapurple;
+    height: 1px;
+    width: 1px;
+}
+h1{
+    padding: 1px;
+    margin: 1px;
+    background-color: purple;
+    width: 1px;
+    height: 1px;
+    justify-content: center;
+    justify-items: flex;
+}
+
+
+
