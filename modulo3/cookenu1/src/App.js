@@ -6,7 +6,7 @@ import Router from './routes/Router';
 import Header from './components/Header/Header';
 
 
-const App() {
+function App () {
   const token = localStorage.getItem("token")
     const [rightButtonText, setRightButtonText] = useState(token ? "Logout" : "Login" )
   return (
