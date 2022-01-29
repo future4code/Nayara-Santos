@@ -14,8 +14,8 @@ const useAdministrativo = () => {
 
     const fazerLogin  = () => {
         const body = {
-            email: email, 
-            password: senha 
+            email: nayara, 
+            password: 123456 
         }
         console.log(body) 
     }
@@ -29,3 +29,5 @@ const useAdministrativo = () => {
         </div>
     )
 }
+
+export default useAdministrativo

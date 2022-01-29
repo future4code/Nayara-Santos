@@ -5,7 +5,7 @@
  e saber mais sobre crush.
 
  
-
+Link surge: early-talk.surge.sh
 
  
 
