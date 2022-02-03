@@ -1,0 +1,41 @@
+Relações sql
+
+Exercício - 1
+
+a)R: Chave estrangeira, ou Foreign Key (FK), ou ainda chave externa é a chave que permite a referência a 
+registros oriundos de outras tabelas. Ou seja, é o campo ou conjunto de campos que compõem a chave primária de 
+uma outra tabela.
+A utilização da chave estrangeira possibilita a implementação da integridade de dados diretamente no banco de dados, 
+conhecida como integridade referencial.
+Uma chave estrangeira é a representação de um relacionamento entre tabelas.
+
+b)INSERT INTO Rating (id, comment, rate, movie_id) 
+VALUES (
+		"001",
+    "Muito bom!",
+    7,
+		"004"
+);
+
+c)
+
+d)ALTER TABLE Movie DROP COLUMN rating;
+
+e)
+
+Exercício - 2
+
+a)
+
+b)INSERT INTO MovieCast(movie_id, actor_id)
+VALUES(
+		"004",
+    "001"
+)
+
+Exercício - 3
+
+a) 
+
+b)SELECT m.id as movie_id, r.rate as rating FROM Movie m
+INNER JOIN Rating r ON m.id = r.movie_id;
