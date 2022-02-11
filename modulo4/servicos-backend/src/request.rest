@@ -1,0 +1,14 @@
+GET http://localhost:3003/users
+Content-Type: application/json
+
+###
+
+POST http://localhost:3003/users/create
+Content-Type: application/json
+Authorization: ""
+
+{
+    "email": "nayara@gmail.com",
+    "password": "12345678",
+    "cep": "08321-080"
+}
