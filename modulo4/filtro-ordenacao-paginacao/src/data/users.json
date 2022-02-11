@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "name": "Carol Dantas",
+        "email": "carolDantas@gmail.com",
+        "password": "12345"
+    },
+
+    {
+        "id": "2",
+        "name": "Amanda Silva",
+        "email": "amandaSilva@gmail.com",
+        "password": "56789"
+    },
+
+    {
+        "id": "3",
+        "name": "Carlos Fernandes",
+        "email": "carlosFernandes@gmail.com",
+        "password": "147920"
+    }
+]
