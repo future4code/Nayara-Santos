@@ -1,0 +1,22 @@
+[
+    {
+    "id": "1",
+    "name": "Nayara dos Santos",
+    "email": "nayara@gmail.com",
+    "password": "12345678"
+    },
+
+    {
+        "id": "2",
+        "name": "Camila Barcelona",
+        "email": "camila@gmail.com",
+        "password": "87654321"
+    },
+
+    {
+        "id": "3",
+        "name": "Julia Castro",
+        "email": "julia@gmail.com",
+        "password": "24681012"
+    }
+]
