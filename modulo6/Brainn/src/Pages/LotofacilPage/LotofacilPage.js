@@ -2,10 +2,10 @@ import React from "react";
 
 const LotofacilPage = () => {
   return (
-    <div className="">
-    <div className="">
+    <div className="divmae">
+    <div className="bloco1">
 
-      <div className="">
+      <div className="blocoInter">
          <div className="botaoselecao">
           <select name="Lotofacil" id="Lotofacil">
             <option>Mega-Sena</option>
@@ -17,8 +17,8 @@ const LotofacilPage = () => {
           </select>
         </div>
       </div>
-      <div className="">
-        <div className="">
+      <div className="bloco2">
+        <div className="blocoNumeros">
           <div className="numeros">1</div>
             <div className="numeros">2</div>
               <div className="numeros">3</div>
@@ -26,6 +26,9 @@ const LotofacilPage = () => {
                 <div className="numeros">5</div>
                  <div className="numeros">6</div>
                   <div className="numeros">7</div>
+            </div>
+            <div className="blocoDetexto">
+              <div className="text">Este sorteio é meramente ilustrativo e não possui nenhuma ligação com a CAIXA.</div>
             </div>
             </div>
             </div>

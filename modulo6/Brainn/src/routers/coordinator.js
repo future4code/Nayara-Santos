@@ -1,5 +1,5 @@
 export const goToMegasena = (history) => {
-    history.push("/Mega-sena")
+    history.push("/")
 }
 
 export const goToQuina = (history) => {

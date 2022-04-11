@@ -1,11 +1,12 @@
 import React from "react";
+import "./MegaSena.css"
 
 const MegasenaPage = () => {
   return (
-    <div className="">
-      <div className="">
+    <div className="divmae">
+      <div className="bloco1">
 
-        <div className="">
+        <div className="blocoInter">
            <div className="botaoselecao">
             <select name="Mega-Sena" id="Mega-Sena">
               <option>Mega-Sena</option>
@@ -17,8 +18,8 @@ const MegasenaPage = () => {
             </select>
           </div>
         </div>
-        <div className="">
-          <div className="">
+        <div className="bloco2">
+          <div className="blocoNumeros">
             <div className="numeros">1</div>
               <div className="numeros">2</div>
                 <div className="numeros">3</div>
@@ -26,6 +27,9 @@ const MegasenaPage = () => {
                   <div className="numeros">5</div>
                    <div className="numeros">6</div>
                     <div className="numeros">7</div>
+              </div>
+              <div className="blocoDetexto">
+                <div className="text">Este sorteio é meramente ilustrativo e não possui nenhuma ligação com a CAIXA.</div>
               </div>
               </div>
               </div>

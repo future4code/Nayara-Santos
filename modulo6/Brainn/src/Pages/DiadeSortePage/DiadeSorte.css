@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.divmae{
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(90, 173, 125, 1);
+    height: 750px;
+}
+
+.bloco1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 700px;
+    background-color: rgba(90, 173, 125, 1);
+}
+
+.botaoselecao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.blocoNumeros{
+    border-radius: 40px;
+}
