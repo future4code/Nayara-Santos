@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.lotomania--Geral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEFEF;
+  height: 750px;
+}
+
+.lotomania--bloco1 {
+  background: #FFAB64;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 250px;
+  border-radius: 10px 5px 5em/ 30px 25px 50%;
+}
+
+.lotomania--h1 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.lotomania--botaoselecao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 250px;
+}
+
+.lotomania--bloco2 {
+  display: flex;
+  align-items: center;
+  padding: 20vh;
+}
+
+.lotomania--numeros {
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFAB64;
+  border-radius: 100%;
+}
+
+.lotomania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #FFAB64;
+  align-items: center;
+  justify-content: center;
+}
+
+.lotomania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #FFAB64;
+  align-items: center;
+  justify-content: center;
+}
+
+.lotomania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #FFAB64;
+  align-items: center;
+  justify-content: center;
+}
+
+.lotomania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #FFAB64;
+  align-items: center;
+  justify-content: center;
+}
+
+.lotomania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #FFAB64;
+  align-items: center;
+  justify-content: center;
+}
+
+.lotomania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 500%;
+  background-color: #FFAB64;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.lotomania--Text {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 50px;
+  align-self: flex-end;
+}
+
+.lotomania--text {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+}

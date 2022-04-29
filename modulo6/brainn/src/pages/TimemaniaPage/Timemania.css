@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.timemania--Geral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEFEF;
+  height: 750px;
+}
+
+.timemania--bloco1 {
+  background: #5AAD7D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 250px;
+  border-radius: 10px 5px 5em/ 30px 25px 50%;
+}
+
+.timemania--h1 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.timemania--botaoselecao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 250px;
+}
+
+.timemania--bloco2 {
+  display: flex;
+  align-items: center;
+  padding: 20vh;
+}
+
+.timemania--numeros {
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5AAD7D;
+  border-radius: 100%;
+}
+
+.timemania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #5AAD7D;
+  align-items: center;
+  justify-content: center;
+}
+
+.timemania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #5AAD7D;
+  align-items: center;
+  justify-content: center;
+}
+
+.timemania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #5AAD7D;
+  align-items: center;
+  justify-content: center;
+}
+
+.timemania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #5AAD7D;
+  align-items: center;
+  justify-content: center;
+}
+
+.timemania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #5AAD7D;
+  align-items: center;
+  justify-content: center;
+}
+
+.timemania--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 500%;
+  background-color: #5AAD7D;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.timemania--Text {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 50px;
+  align-self: flex-end;
+}
+
+.timemania--text {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+}

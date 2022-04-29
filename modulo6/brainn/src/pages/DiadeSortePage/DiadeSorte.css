@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.diadesorte--Geral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEFEF;
+  height: 750px;
+}
+
+.diadesorte--bloco1 {
+  background: #BFAF83;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 250px;
+  border-radius: 10px 5px 5em/ 30px 25px 50%;
+}
+
+.diadesorte--h1 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.diadesorte--botaoselecao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 250px;
+}
+
+.diadesorte--bloco2 {
+  display: flex;
+  align-items: center;
+  padding: 20vh;
+}
+
+.diadesorte--numeros {
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #BFAF83;
+  border-radius: 100%;
+}
+
+.diadesorte--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #BFAF83;
+  align-items: center;
+  justify-content: center;
+}
+
+.diadesorte--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #BFAF83;
+  align-items: center;
+  justify-content: center;
+}
+
+.diadesorte--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #BFAF83;
+  align-items: center;
+  justify-content: center;
+}
+
+.diadesorte--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #BFAF83;
+  align-items: center;
+  justify-content: center;
+}
+
+.diadesorte--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #BFAF83;
+  align-items: center;
+  justify-content: center;
+}
+
+.diadesorte--numeros {
+  margin: 15px;
+  display: flex;
+  border-radius: 500%;
+  background-color: #BFAF83;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.diadesorte--Text {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 50px;
+  align-self: flex-end;
+}
+
+.diadesorte--text {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+}

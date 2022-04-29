@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.quina--Geral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEFEF;
+  height: 750px;
+}
+
+.quina--bloco1 {
+  background: #8666EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 250px;
+  border-radius: 10px 5px 5em/ 30px 25px 50%;
+}
+
+.quina--h1 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.quina--botaoselecao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 250px;
+}
+
+.quina--bloco2 {
+  display: flex;
+  align-items: center;
+  padding: 20vh;
+}
+
+.quina--numeros8 {
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8666EF;
+  border-radius: 100%;
+}
+
+.quina--numeros9 {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #8666EF;
+  align-items: center;
+  justify-content: center;
+}
+
+.quina--numeros10{
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #8666EF;
+  align-items: center;
+  justify-content: center;
+}
+
+.quina--numeros11 {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #8666EF;
+  align-items: center;
+  justify-content: center;
+}
+
+.quina--numeros12 {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #8666EF;
+  align-items: center;
+  justify-content: center;
+}
+
+.quina--numeros13 {
+  margin: 15px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #8666EF;
+  align-items: center;
+  justify-content: center;
+}
+
+.quina--numeros14 {
+  margin: 15px;
+  display: flex;
+  border-radius: 500%;
+  background-color: #8666EF;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.quina--Text {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 50px;
+  align-self: flex-end;
+}
+
+.quina--text {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+}
